@@ -1,0 +1,10 @@
+<?php
+session_start();
+if(isset($_SESSION['admin'])){
+    header("location:dashboard2.php");
+    exit();
+}
+else{
+	header("location:login1.php");
+    exit();
+}
